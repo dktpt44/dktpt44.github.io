@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Website moved to dhurba.net</title>
+
+  <script>
+    (() => {
+      if (window.location.hostname !== "dktpt44.github.io") {
+        return;
+      }
+
+      /*
+       * Start with the visitor's complete existing URL.
+       * This preserves the path, query string, and hash.
+       */
+      const destination = new URL(window.location.href);
+
+      destination.protocol = "https:";
+      destination.hostname = "dhurba.net";
+      destination.port = "";
+      
+      window.location.replace(destination.href);
+    })();
+  </script>
+</head>
+
+<body>
+  <main>
+    <h1>This website has moved</h1>
+
+    <p>
+      The portfolio is now available at
+      <a href="https://dhurba.net/">dhurba.net</a>.
+    </p>
+
+    <noscript>
+      <p>
+        JavaScript is disabled. Select the link above to continue.
+      </p>
+    </noscript>
+  </main>
+</body>
+
+</html>
